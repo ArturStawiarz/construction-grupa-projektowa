@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
   line-height: 1.6;
   color: #222;
 }
@@ -192,10 +192,18 @@ body {
     display: block;
     margin: 10px 0;
   }
+  .card {
+  border-radius: 6px;
+}
+.card:hover {
+  transform: translateY(-4px);
+  transition: 0.2s ease;
+}
+
 }
   
-}
   
+
 
 
 
