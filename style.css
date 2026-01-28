@@ -161,8 +161,18 @@ body {
   text-transform: uppercase;
   color: #1e40af;
 }
+  #contact a {
+  color: #1e40af;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
 }
   
+
 
 
 
