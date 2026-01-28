@@ -43,8 +43,8 @@ body {
 }
 
 .hero {
-  background: #1f1f1f;
-  color: #fff;
+  background: #f4f7fb;
+  color: #0f172a;
   padding: 100px 0;
   text-align: center;
 }
@@ -61,7 +61,7 @@ body {
 .btn {
   display: inline-block;
   padding: 12px 25px;
-  background: #b08d57;
+  background: #1e40af;
   color: #fff;
   text-decoration: none;
   border: none;
@@ -70,7 +70,7 @@ body {
 
 .btn-outline {
   background: transparent;
-  border: 2px solid #b08d57;
+  border: 2px solid #1e40af;
   margin-left: 15px;
 }
 
