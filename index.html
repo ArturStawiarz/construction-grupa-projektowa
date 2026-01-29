@@ -49,4 +49,191 @@
 
     <div class="hero-buttons">
       <a href="#offer" class="btn" aria-label="Zobacz ofertę">Zobacz ofertę</a>
-      <a href="#contact" class="btn btn-outl
+      <a href="#contact" class="btn btn-outline" aria-label="Umów konsultację">Umów konsultację</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section about reveal">
+  <div class="container about-grid">
+
+    <div class="about-text">
+      <h2>O nas</h2>
+      <p>
+        CONSTRUCTION Grupa Projektowa to biuro projektowe specjalizujące się
+        w kompleksowej obsłudze inwestycji budowlanych – od koncepcji,
+        przez projekt, aż po realizację i nadzór autorski.
+      </p>
+      <p>
+        Stawiamy na funkcjonalność, zgodność z przepisami oraz
+        indywidualne podejście do każdej inwestycji.
+      </p>
+    </div>
+
+    <div class="about-features">
+      <div class="about-item">
+        <strong>Doświadczenie</strong>
+        <span>projekty mieszkaniowe, usługowe i przemysłowe</span>
+      </div>
+      <div class="about-item">
+        <strong>Kompleksowość</strong>
+        <span>od koncepcji po dokumentację i nadzór</span>
+      </div>
+      <div class="about-item">
+        <strong>Indywidualne podejście</strong>
+        <span>każdy projekt dopasowany do inwestora</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- OFFER -->
+<section id="offer" class="section gray reveal">
+  <div class="container">
+    <h2>Oferta</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Projekty architektoniczno-budowlane</h3>
+        <p>
+          Projekty domów jednorodzinnych, budynków wielorodzinnych, gospodarczych,
+          obiektów usługowych oraz przemysłowych, opracowane zgodnie
+          z obowiązującymi przepisami i indywidualnymi potrzebami inwestora.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Adaptacje projektów gotowych</h3>
+        <p>
+          Dostosowanie projektów typowych do warunków działki,
+          miejscowego planu lub decyzji WZ, wraz z kompletem
+          dokumentacji niezbędnej do uzyskania pozwolenia na budowę.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Projekty zagospodarowania terenu</h3>
+        <p>
+          Opracowanie układu działki, wjazdów, miejsc postojowych,
+          przyłączy oraz bilansu powierzchni, zgodnie z przepisami
+          i uwarunkowaniami lokalnymi.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Nadzór autorski</h3>
+        <p>
+          Wsparcie projektanta na etapie realizacji inwestycji,
+          kontrola zgodności wykonania z dokumentacją projektową
+          oraz konsultacje projektowe w trakcie budowy.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section reveal">
+  <div class="container">
+    <h2>Realizacje</h2>
+
+    <p style="max-width:700px;margin-bottom:40px;">
+      Poniżej prezentujemy wybrane projekty zrealizowane oraz opracowania
+      projektowe wykonane w ramach naszej działalności.
+    </p>
+
+    <div class="grid">
+      <div class="card project-card">
+        <h3>Dom jednorodzinny</h3>
+        <p>Projekt indywidualny budynku mieszkalnego jednorodzinnego.</p>
+        <span class="project-tag">projekt indywidualny</span>
+      </div>
+
+      <div class="card project-card">
+        <h3>Budynek usługowy</h3>
+        <p>Projekt architektoniczno-budowlany obiektu usługowego.</p>
+        <span class="project-tag">usługi</span>
+      </div>
+
+      <div class="card project-card">
+        <h3>Adaptacja projektu gotowego</h3>
+        <p>Dostosowanie projektu typowego do warunków lokalnych.</p>
+        <span class="project-tag">adaptacja</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section gray reveal">
+  <div class="container">
+    <h2>Kontakt</h2>
+
+    <div class="grid">
+      <div>
+        <h3>Dane kontaktowe</h3>
+        <p>
+          <strong>CONSTRUCTION Grupa Projektowa Artur Stawiarz</strong><br>
+          tel.: <a href="tel:+48604782725">+48 604 782 725</a><br>
+          e-mail: <a href="mailto:constructiongrupoprojektowa@gmail.com">constructiongrupoprojektowa@gmail.com</a>
+        </p>
+        <p>Obsługujemy inwestycje na terenie całej Polski.</p>
+      </div>
+
+      <form class="contact-form" method="post">
+        <input type="text" placeholder="Imię i nazwisko" required>
+        <input type="email" placeholder="Adres e-mail" required>
+        <textarea placeholder="Krótki opis inwestycji" rows="5"></textarea>
+        <button type="submit" class="btn">Wyślij zapytanie</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 CONSTRUCTION Grupa Projektowa</p>
+  </div>
+</footer>
+
+<!-- MOBILE MENU SCRIPT -->
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav');
+  const navLinks = document.querySelectorAll('.nav a');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('nav-open');
+  });
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('nav-open');
+    });
+  });
+</script>
+
+<!-- SCROLL REVEAL -->
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+
+  function revealOnScroll() {
+    const windowHeight = window.innerHeight;
+
+    reveals.forEach(section => {
+      const sectionTop = section.getBoundingClientRect().top;
+      if (sectionTop < windowHeight - 100) {
+        section.classList.add('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', revealOnScroll);
+  revealOnScroll();
+</script>
+
+</body>
+</html>
