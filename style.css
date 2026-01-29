@@ -277,8 +277,7 @@ body {
   .hero h1 {
     font-size: 2.2rem;
   }
-}
-
+  
 /* ANIMATION */
 @keyframes fadeIn {
   from {
@@ -289,6 +288,18 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+  /* SCROLL REVEAL */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
 
 
