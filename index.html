@@ -180,14 +180,23 @@
 
   <!-- MOBILE MENU SCRIPT -->
   <script>
-    const toggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('.nav');
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav');
+  const navLinks = document.querySelectorAll('.nav a');
 
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('nav-open');
+  // otwieranie / zamykanie menu
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('nav-open');
+  });
+
+  // zamykanie menu po kliknięciu linku (mobile)
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('nav-open');
     });
-  </script>
-
+  });
+</script>
 </body>
 </html>
           
+
