@@ -39,7 +39,7 @@ body {
 }
 
 .logo img {
-  height: 88px;
+  height: 74px;
 }
 
 /* NAVIGATION */
@@ -159,6 +159,11 @@ body {
   .about-grid {
     grid-template-columns: 1fr;
   }
+
+  /* CONTACT MOBILE NAME SPLIT */
+  .contact-name {
+    display: block;
+  }
 }
 
 /* GRID & CARDS */
@@ -264,11 +269,7 @@ body {
     display: block;
     margin: 10px 0;
   }
-/* CONTACT MOBILE NAME SPLIT */
-@media (max-width: 768px) {
-  .contact-name {
-    display: block;
-  }
+
   /* HERO BUTTONS MOBILE */
   .hero-buttons {
     flex-direction: column;
@@ -308,5 +309,3 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
-
-
