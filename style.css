@@ -35,7 +35,7 @@ body {
 }
 
 .logo img {
-  height: 74px; /* POWIĘKSZONE LOGO */
+  height: 74px;
 }
 
 /* NAVIGATION */
@@ -193,6 +193,11 @@ body {
   color: #0f172a;
 }
 
+/* KLUCZOWA REGUŁA – OTWIERANIE MENU */
+.nav-open {
+  display: block !important;
+}
+
 /* MOBILE */
 @media (max-width: 768px) {
 
@@ -237,4 +242,3 @@ body {
     transform: translateY(0);
   }
 }
-
