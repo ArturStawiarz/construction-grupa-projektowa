@@ -35,7 +35,7 @@ body {
 }
 
 .logo img {
-  height: 64px; /* POWIĘKSZONE LOGO */
+  height: 74px; /* POWIĘKSZONE LOGO */
 }
 
 /* NAVIGATION */
@@ -237,3 +237,4 @@ body {
     transform: translateY(0);
   }
 }
+
