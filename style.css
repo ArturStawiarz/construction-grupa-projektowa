@@ -31,13 +31,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 0;
+  padding: 18px 0;
 }
 
 .logo img {
-  height: 50px;
+  height: 64px; /* POWIĘKSZONE LOGO */
 }
 
+/* NAVIGATION */
 .nav a {
   margin-left: 20px;
   text-decoration: none;
@@ -60,26 +61,35 @@ body {
   margin: 0 auto 20px;
 }
 
+.hero p {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* HERO BUTTONS */
 .hero-buttons {
   margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 /* BUTTONS */
 .btn {
   display: inline-block;
-  padding: 12px 25px;
+  padding: 12px 28px;
   background: #1e40af;
   color: #fff;
   text-decoration: none;
   border: none;
   cursor: pointer;
+  font-weight: 500;
 }
 
 .btn-outline {
   background: #ffffff;
   border: 2px solid #1e40af;
   color: #1e40af;
-  margin-left: 15px;
 }
 
 .btn-outline:hover {
@@ -173,7 +183,7 @@ body {
   padding: 20px 0;
 }
 
-/* MOBILE */
+/* MOBILE MENU */
 .menu-toggle {
   display: none;
   font-size: 1.8rem;
@@ -183,7 +193,9 @@ body {
   color: #0f172a;
 }
 
+/* MOBILE */
 @media (max-width: 768px) {
+
   .menu-toggle {
     display: block;
   }
@@ -197,9 +209,24 @@ body {
     display: block;
     margin: 10px 0;
   }
+
+  /* HERO BUTTONS MOBILE */
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
 }
 
-/* ANIMATIONS */
+/* ANIMATION */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -209,5 +236,4 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
-    }
-  
+}
