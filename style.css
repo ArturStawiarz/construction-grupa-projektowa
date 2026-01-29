@@ -22,6 +22,11 @@ body {
   margin: auto;
 }
 
+/* OFFSET DLA ANCHORÓW POD STICKY HEADER */
+section {
+  scroll-margin-top: 100px; /* dopasuj do wysokości header */
+}
+
 /* HEADER */
 .header {
   background: #fff;
@@ -159,7 +164,6 @@ body {
   .about-grid {
     grid-template-columns: 1fr;
   }
-
   /* CONTACT MOBILE NAME SPLIT */
   .contact-name {
     display: block;
