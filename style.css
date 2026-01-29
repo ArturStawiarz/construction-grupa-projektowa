@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -113,6 +114,7 @@ body {
   margin-bottom: 30px;
   font-size: 2rem;
 }
+
 /* ABOUT PREMIUM */
 .about {
   background: #ffffff;
@@ -277,7 +279,8 @@ body {
   .hero h1 {
     font-size: 2.2rem;
   }
-  
+}
+
 /* ANIMATION */
 @keyframes fadeIn {
   from {
@@ -288,7 +291,9 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
-  /* SCROLL REVEAL */
+}
+
+/* SCROLL REVEAL */
 .reveal {
   opacity: 0;
   transform: translateY(30px);
@@ -299,7 +304,3 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
-}
-
-
-
